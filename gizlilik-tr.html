@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Dijital Qırım</title>
+<style>:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto; padding: 28px 20px 64px; max-width: 46rem;
+  font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  color: #1E232A; background: #FAF8F5;
+  overflow-wrap: break-word;
+}
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .2em; }
+h2 { font-size: 1.2rem; margin: 1.8em 0 .4em; color: #0084C8; }
+h3 { font-size: 1.02rem; margin: 1.4em 0 .3em; }
+a { color: #0067A0; }
+code { background: #EFEBE4; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+hr { border: none; border-top: 1px solid #D8D2C9; margin: 2em 0; }
+ul { padding-left: 1.2em; }
+li { margin: .3em 0; }
+nav { margin: 1.2em 0 2em; }
+nav a {
+  display: inline-block; margin: 0 .5em .5em 0; padding: .35em .8em;
+  border: 1px solid #D8D2C9; border-radius: 999px; text-decoration: none;
+}
+.kutu {
+  background: #F1EDE6; border: 1px solid #E0DAD1; border-radius: 10px;
+  padding: 14px 18px; margin: 1.4em 0;
+}
+footer { margin-top: 3em; font-size: .85rem; opacity: .75; }
+
+/* Karanlık tema EN SONDA: eşit özgüllükte son kural kazanır. Bu blok
+   yukarıdayken .kutu ve a kuralları onu eziyordu ve kutu koyu temada
+   açık zeminde açık yazıyla, yani okunmaz hâlde çıkıyordu. */
+@media (prefers-color-scheme: dark) {
+  body { color: #FAF8F5; background: #1E232A; }
+  a { color: #6BB9E4; }
+  code { background: #2A313A; }
+  hr { border-top-color: #3A424D; }
+  nav a { border-color: #3A424D; }
+  .kutu { background: #2A313A; border-color: #3A424D; }
+}</style>
+</head>
+<body>
+<nav><a href="gizlilik-tr.html" aria-current="page">Türkçe</a><a href="gizlilik-en.html">English</a><a href="gizlilik-ru.html">Русский</a><a href="gizlilik-uk.html">Українська</a><a href="gizlilik-de.html">Deutsch</a></nav>
+<h1 id="dijital-qırım--gizlilik-politikası-ve-aydınlatma-metni">Dijital Qırım — Gizlilik Politikası ve Aydınlatma Metni</h1>
+<p><strong>Yürürlük tarihi:</strong> 8 Eylül 2026<br><strong>Sürüm:</strong> 1.0</p>
+<p>Bu metin, Dijital Qırım uygulamasının hangi kişisel verileri işlediğini, neden işlediğini ve haklarınızı ne şekilde kullanabileceğinizi anlatır. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında hazırlanmıştır.</p>
+<hr>
+<h2 id="kısaca">Kısaca</h2>
+<ul>
+<li>Uygulamada <strong>reklam yok, analitik yok, izleyici (tracker) yok, çökme raporu yok.</strong></li>
+<li><strong>Konum izni istemiyoruz.</strong> Uygulama telefonunuzun konumunu hiçbir şekilde okumaz.</li>
+<li>Verileriniz <strong>Almanya'da (Frankfurt)</strong> barındırılan sunucularda durur.</li>
+<li>Verinizi kimseye satmıyor, reklamcılıkla paylaşmıyoruz.</li>
+<li>Uygulamayı <strong>hesap açmadan, misafir olarak</strong> kullanabilirsiniz. Sözlük, mutfak, müzik, harita ve kaynakça hesapsız çalışır.</li>
+</ul>
+<hr>
+<h2 id="1-veri-sorumlusu">1. Veri sorumlusu</h2>
+<ul>
+<li><strong>Veri sorumlusu:</strong> Tolga Gürtuna</li>
+<li><strong>İletişim:</strong> dijitalqirim@gmail.com</li>
+<li><strong>Uygulama:</strong> Dijital Qırım (com.dijitalqirim.app)</li>
+</ul>
+<p>Veri koruma başvurularınızı yukarıdaki e-posta adresine iletebilirsiniz.</p>
+<hr>
+<h2 id="2-hangi-verileri-işliyoruz">2. Hangi verileri işliyoruz</h2>
+<h3 id="21-hesap-açmadan-kullanırsanız">2.1 Hesap açmadan kullanırsanız</h3>
+<p>Hiçbir kişisel veriniz sunucularımıza kaydedilmez. Yalnızca uygulamanın çalışması için gereken ağ istekleri yapılır (bkz. <a href="#4-verilerin-paylaşıldığı-üçüncü-taraflar">4. Üçüncü taraflar</a>).</p>
+<h3 id="22-hesap-açarsanız">2.2 Hesap açarsanız</h3>
+<ul>
+<li><strong>E-posta adresi</strong> — sizden, ya da Google ile giriş yaptıysanız Google'dan. Hesabınızı oluşturmak ve giriş yapmanız için.</li>
+<li><strong>Parola</strong> — yalnızca e-posta ile kayıtta. Kimlik doğrulama için. Parola <strong>şifrelenmiş özet (hash)</strong> olarak saklanır; açık hâlini biz de göremeyiz.</li>
+<li><strong>Ad soyad, kullanıcı adı</strong> — sizden ya da Google profilinizden. Sizi uygulamada tanıtmak için.</li>
+<li><strong>Profil fotoğrafı adresi</strong> — Google ile giriş yaptıysanız Google'dan.</li>
+<li><strong>Ülke, şehir</strong> — sizden, isteğe bağlı. Diaspora ağında ve mentorlukta konum göstermek için.</li>
+<li><strong>Tercih ettiğiniz lehçe</strong> — sizden. Sözlük ve içerik tercihleri için.</li>
+<li><strong>Ata köyü</strong> — sizden, isteğe bağlı. Tamır modülünde köyünüzle bağ kurmak için.</li>
+<li><strong>Arayüz dili</strong> — sizden. Uygulama dilini hatırlamak için.</li>
+<li><strong>KVKK/GDPR onayı ve tarihi</strong> — sizden. Onayın kaydı için.</li>
+</ul>
+<h3 id="23-uygulamayı-kullandıkça-oluşan-veriler">2.3 Uygulamayı kullandıkça oluşan veriler</h3>
+<ul>
+<li><strong>Öğrenme ilerlemeniz</strong> (hangi kelimeyi bildiniz/bilmediniz) — kelime ezberi özelliğinin çalışması için.</li>
+<li><strong>Şecere (soy ağacı) kayıtlarınız</strong> — aile ağacınızı saklamak için. Ayrıntı için 3. bölüme bakın.</li>
+<li><strong>Mentorluk kaydınız ve eşleşmeleriniz</strong> — mentorluk ağının çalışması için. Ayrıntı için 5. bölüme bakın.</li>
+<li><strong>Köy meclisi üyelikleriniz</strong> — topluluk sayfalarına katılım için.</li>
+<li><strong>Gönderdiğiniz içerik bildirimleri ve engelleme listeniz</strong> — uygunsuz içeriği inceleyebilmek ve engellediğiniz kişileri size göstermemek için. Bildirimlerinizi yalnızca siz ve uygulamayı yönetenler görür; bildirdiğiniz kişiye söylenmez. Engelleme listeniz de yalnızca sizde görünür, engellediğiniz kişiye bildirilmez.</li>
+</ul>
+<hr>
+<h2 id="3-şecere-kayıtları--başkalarına-ait-veriler">3. Şecere kayıtları — başkalarına ait veriler</h2>
+<p>Şecere modülünde <strong>kendinizin değil, akrabalarınızın</strong> adını, doğum/ölüm yılını, doğum yerini ve notlarını girersiniz. Bu kişiler hayatta olabilir.</p>
+<p>Bunu ciddiye alıyoruz:</p>
+<ul>
+<li>Şecere kayıtlarınız <strong>yalnızca size görünür.</strong> Veritabanı düzeyinde satır bazlı güvenlik (RLS) kuralıyla korunur; başka bir kullanıcı, uygulamanın anahtarına sahip olsa bile bu kayıtları okuyamaz.</li>
+<li>Bu kayıtlar hiçbir yerde yayımlanmaz, başka kullanıcılara gösterilmez, aranabilir bir dizine konmaz.</li>
+<li><strong>Sorumluluk sizde:</strong> Hayattaki bir akrabanızın verisini girerken onun bilgisi ve rızası olması gerekir. Bir yakınınız kaydının silinmesini isterse uygulamadan silebilirsiniz; yardıma ihtiyacınız olursa bize yazın.</li>
+</ul>
+<hr>
+<h2 id="4-verilerin-paylaşıldığı-üçüncü-taraflar">4. Verilerin paylaşıldığı üçüncü taraflar</h2>
+<p>Verinizi <strong>satmıyoruz</strong> ve reklamcılıkla paylaşmıyoruz. Uygulamanın çalışması için şu hizmetler devrededir:</p>
+<h3 id="supabase-barındırma-veritabanı-kimlik-doğrulama-dosya-depolama">Supabase (barındırma, veritabanı, kimlik doğrulama, dosya depolama)</h3>
+<p>Bütün hesap ve içerik verisi burada durur. Sunucular <strong>Amazon Web Services eu-central-1 (Frankfurt, Almanya)</strong> bölgesindedir. → <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
+<h3 id="google-yalnızca-google-ile-giriş-seçerseniz">Google (yalnızca &quot;Google ile giriş&quot; seçerseniz)</h3>
+<p>Google ile giriş yapmayı seçerseniz Google, giriş yaptığınızı bilir ve bize e-posta adresinizi, adınızı ve profil fotoğrafınızın adresini verir. E-posta ve parola ile kaydolursanız Google devreye girmez. → <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h3 id="openstreetmap-harita-karoları">OpenStreetMap (harita karoları)</h3>
+<p>Tamır ve Diaspora haritalarını açtığınızda harita görüntüleri OpenStreetMap sunucularından indirilir. Bu sırada <strong>IP adresiniz ve baktığınız harita bölgesi</strong> OpenStreetMap'e ulaşır. Bu, harita gösterebilmenin teknik olarak zorunlu sonucudur. → <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></p>
+<h3 id="dış-bağlantılar">Dış bağlantılar</h3>
+<p>Kaynakça ve müzik künyelerindeki bağlantılara dokunduğunuzda telefonunuzun tarayıcısı açılır ve ilgili siteye (archive.org, doi.org, yayıncı siteleri, kirimdernegi.org.tr, ru.wikipedia.org gibi) gidersiniz. O noktadan sonra o sitenin gizlilik politikası geçerlidir.</p>
+<hr>
+<h2 id="5-mentorluk--neyin-görüneceği">5. Mentorluk — neyin görüneceği</h2>
+<p>Mentorluk ağı isteğe bağlıdır ve <strong>kendi elinizle kaydolmadıkça</strong> hiçbir bilginiz listelenmez.</p>
+<ul>
+<li><strong>Mentor</strong> olarak kaydolursanız: adınız, kullanıcı adınız, şehriniz, ülkeniz, lehçe tercihiniz, uzmanlık alanınız ve yazdığınız tanıtım metni <strong>giriş yapmış diğer kullanıcılara</strong> görünür. Misafir kullanıcılara görünmez.</li>
+<li><strong>Menti</strong> olarak kaydolursanız: hiçbir yerde listelenmezsiniz. Yalnızca başvurduğunuz mentor sizi görür.</li>
+<li><strong>E-posta adresiniz hiçbir durumda diğer kullanıcılara gösterilmez.</strong></li>
+<li>Kaydınızı istediğiniz zaman silebilirsiniz; sildiğiniz an listeden çıkarsınız.</li>
+</ul>
+<hr>
+<h2 id="6-verinin-nerede-durduğu-ve-yurt-dışına-aktarım">6. Verinin nerede durduğu ve yurt dışına aktarım</h2>
+<p>Verileriniz Almanya'da (AWS Frankfurt) barındırılır.</p>
+<ul>
+<li><strong>KVKK açısından:</strong> Bu, kişisel verilerinizin yurt dışına aktarılması anlamına gelir. Uygulamayı kullanmak için verdiğiniz açık rıza bu aktarımı da kapsar.</li>
+<li><strong>GDPR açısından:</strong> Veriler Avrupa Ekonomik Alanı içinde kalır.</li>
+</ul>
+<hr>
+<h2 id="7-ne-kadar-süre-saklanır">7. Ne kadar süre saklanır</h2>
+<ul>
+<li>Hesap verileriniz, hesabınız açık kaldığı sürece saklanır.</li>
+<li>Hesabınızı sildirdiğinizde profiliniz, şecere kayıtlarınız, öğrenme ilerlemeniz, mentorluk kaydınız ve eşleşmeleriniz silinir.</li>
+<li>Uygulamanın kültürel içeriği (sözlük, tarifler, köy listesi, müzik künyeleri, kaynakça) kişisel veri değildir ve silinmez.</li>
+</ul>
+<hr>
+<h2 id="8-haklarınız">8. Haklarınız</h2>
+<p>KVKK'nın 11. maddesi ve GDPR uyarınca şu haklara sahipsiniz:</p>
+<ul>
+<li>Kişisel verinizin işlenip işlenmediğini öğrenme ve buna ilişkin bilgi talep etme</li>
+<li>İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+<li>Yurt içinde/yurt dışında verinin aktarıldığı üçüncü kişileri bilme</li>
+<li>Eksik veya yanlış işlenmişse <strong>düzeltilmesini</strong> isteme</li>
+<li><strong>Silinmesini</strong> isteme</li>
+<li>Verinizin <strong>bir kopyasını</strong> alma (taşınabilirlik)</li>
+<li>İşlemeye <strong>itiraz etme</strong> ve verdiğiniz <strong>rızayı geri çekme</strong></li>
+</ul>
+<p>Bu haklarınızı <strong>dijitalqirim@gmail.com</strong> adresine yazarak kullanabilirsiniz. Başvurularınız en geç 30 gün içinde yanıtlanır.</p>
+<p>Türkiye'de Kişisel Verileri Koruma Kurumu'na, Avrupa Birliği'nde ise bulunduğunuz ülkenin veri koruma otoritesine şikâyette bulunma hakkınız saklıdır.</p>
+<hr>
+<h2 id="9-güvenlik">9. Güvenlik</h2>
+<ul>
+<li>Bütün ağ trafiği HTTPS ile şifrelenir.</li>
+<li>Parolalar özet (hash) olarak saklanır; açık hâli hiçbir yerde tutulmaz.</li>
+<li>Veritabanında <strong>satır bazlı güvenlik (RLS)</strong> kullanılır: profiliniz, şecereniz, öğrenme ilerlemeniz ve mentorluk kaydınız yalnızca sizin oturumunuzla okunabilir.</li>
+<li>Kültürel içerik tabloları herkese <strong>salt okunur</strong> açıktır; uygulama anahtarıyla içerik eklenemez ya da silinemez.</li>
+<li>Mentor listesi ve eşleşmeler yalnızca giriş yapmış kullanıcılara açıktır ve yalnızca gösterilmesi gereken alanları içerir; profil tablosunun tamamı başkalarına açılmaz.</li>
+</ul>
+<hr>
+<h2 id="10-uygulamanın-istemediği-izinler">10. Uygulamanın istemediği izinler</h2>
+<p>Dijital Qırım şu izinleri <strong>istemez</strong>: konum, kamera, mikrofon, rehber, takvim, dosyalarınız, telefon durumu.</p>
+<p>İstediği izinler ve sebepleri:</p>
+<ul>
+<li><strong>İnternet, ağ durumu</strong> — sunucuya bağlanmak, harita ve ses indirmek.</li>
+<li><strong>Bildirim</strong> (Android 13+) — müzik çalarken medya bildirimini göstermek.</li>
+<li><strong>Arka planda çalıştırma, ekranı uyanık tutma</strong> — ekran kapalıyken müziğin kesilmemesi.</li>
+<li><strong>Bluetooth</strong> — kulaklıktaki oynat/duraklat tuşlarının çalışması.</li>
+</ul>
+<hr>
+<h2 id="11-çocuklar">11. Çocuklar</h2>
+<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek 13 yaş altından veri toplamaz. Çocuğunuza ait bir veri girildiğini düşünüyorsanız bize yazın, silelim.</p>
+<hr>
+<h2 id="12-bu-metinde-değişiklik">12. Bu metinde değişiklik</h2>
+<p>Bu metin güncellenirse yürürlük tarihi değişir ve önemli değişiklikler uygulama içinde duyurulur. Metnin geçmiş sürümleri projenin kod deposunda saklanır.</p>
+<hr>
+<footer>Dijital Qırım · com.dijitalqirim.app</footer>
+</body>
+</html>
